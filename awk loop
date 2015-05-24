@@ -6,7 +6,6 @@ $ awk '{for (i = 1; i<NF; i++) print NF,$i}' test 作用同上
 变量的初始值为1，若i小于可等于NF(记录中域的个数),则执行打印语句，且i增加1。直到i的值大于NF.
 
 breadkcontinue语句。break用于在满足条件的情况下跳出循环；continue用于在满足条件的情况下忽略后面的语句，直接返回循环的顶端。如：
-
 {for ( x=3; x<=NF; x++) if ($x<0 ){print "Bottomed out!"; break   }}
 {for ( x=3; x<=NF; x++) if ($x==0){print "Get next item"; continue}}      
 next语句从输入文件中读取一行，然后从头开始执行awk脚本。如：
